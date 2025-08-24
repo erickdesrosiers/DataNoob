@@ -17,7 +17,7 @@ df.columns = df.columns.str.strip().str.upper().str.replace(" ", "_")
 
 # Filtro por región
 regiones = df["REGION"].unique()
-selected_regions = st.multiselect("Selecciona Región:", opciones=regiones, default=list(regiones))
+selected_regions = st.multiselect("Selecciona Región:", options=regiones, default=list(regiones))
 
 if selected_regions:
     dff = df[df["REGION"].isin(selected_regions)]
