@@ -11,6 +11,7 @@ st.title("Dashboard de Consumo de Contenido")
 
 # Cargar dataset
 df = pd.read_excel("DATA/Exámen.xlsx", sheet_name="Dataset")
+#un cambio jsjsj
 # Normalizar columnas
 df.columns = df.columns.str.strip().str.upper().str.replace(" ", "_")
 
