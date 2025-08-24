@@ -76,3 +76,4 @@ region_genre = dff.groupby(["REGION", "GENRE"])["SCREENTIME"].sum().reset_index(
 fig_heatmap = px.density_heatmap(region_genre, x="REGION", y="GENRE", z="SCREENTIME",
                                  title="Relación entre región y género")
 st.plotly_chart(fig_heatmap, use_container_width=True)
+#Commit de prueba
