@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Cargar dataset
-df = pd.read_excel(os.getenv("EXAMEN"), sheet_name="Dataset")
+df = pd.read_excel("Exámen.xlsx", sheet_name="Dataset")
 
 # Inicializar app
 app = Dash(__name__)
