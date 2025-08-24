@@ -10,7 +10,7 @@ st.set_page_config(page_title="Dashboard de Consumo de Contenido", layout="wide"
 st.title("Dashboard de Consumo de Contenido")
 
 # Cargar dataset
-df = pd.read_excel("DATA/Examen.xlsx", sheet_name="Dataset")
+df = pd.read_excel("DATA/Exámen.xlsx", sheet_name="Dataset")
 # Normalizar columnas
 df.columns = df.columns.str.strip().str.upper().str.replace(" ", "_")
 
